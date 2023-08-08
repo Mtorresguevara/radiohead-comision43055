@@ -12,28 +12,44 @@ font-family: 'Caladea', serif;
 font-family: 'Luckiest Guy', cursive;
 */
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: .30rem;
+    background-color: black;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+
 .imagen-logo{
     width: 4.375rem;
     border-radius: 50%;
+    margin-top: .125rem;
+    margin-left: .625rem;
 }
 
 .navbar{
-    background-color: black;
-    width: 79.6875rem;
+    display: flex;
     list-style: none;
-    background-color: black;
-
+    cursor: pointer;
+    
 }
-.navbar ul li a{
+
+.navbar li a{
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.928);
     font-size: 1.125rem;
     font-family: 'Caladea', serif;
+    margin-right: 1.25rem;
+    gap: .625rem;
 
 }
 
 section h1{
-    color: red;
+    color: rgb(231, 11, 11);
     text-align: center;
     font-size: 6.25rem;
     font-family: 'Luckiest Guy', cursive;
@@ -42,16 +58,23 @@ section h1{
 }
 
 .foto-banda{
+    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
+    width:100%;
+    height: 31.25rem;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 79.6875rem;
+    background-position: 90%;
     
+}
 
+body{
+    background-color: rgb(234, 226, 226);
 }
 
 h2{
     text-align: center;
-    color: white;
-    background-color: red;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
     font-size: 3.125rem;
     font-family: 'Caladea', serif;
     margin-top: 1.875rem;
@@ -60,28 +83,53 @@ h2{
 }
 
 .biografia{
-    font-size: 1rem;
+    font-size: 16px;
     text-align: justify;
     text-indent: .625rem;
     font-family: 'Caladea', serif;
     margin-bottom: 1.875rem;
-    margin-left: .9375rem;
+    margin-left: 1.25rem;
+    margin-right: 1.875rem;
+}
+
+.container-principal{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 19.6875rem 19.6875rem 19.6875rem ;
+    grid-template-areas: 
+    "section-bio div1 "
+    "section-bio div2 "
+    "section-bio div3"
+    ;
+    margin-bottom: 1.875rem;
+    
+}
+
+section div img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-right: 1.875rem;
 
 }
 
 footer{
+    display: flex;
+    justify-content:center;
+    gap:.9375rem;
     background-color: black;
     color: white;
     font-family: 'Caladea', serif;
     margin-top: 3.75rem;
-
+    
 }
 
 section h3{
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
     margin-left: .9375rem
-
 }
 
 .imagen-integrantes{
@@ -94,7 +142,6 @@ section h3{
     margin-right: 4.375rem;
     margin-bottom: .625rem;
     margin-left: 2.5rem;
-
 }
 
 .integrantes{
@@ -119,9 +166,22 @@ section h3{
 h4{
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
-    margin-left: .9375rem
+    margin-left: .9375rem;
+    text-align: center;
 
 }
+.container-discos{ 
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: 
+    "disco1 disco2 disco3"
+    "disco4 disco5 disco6"
+    "disco7 disco8 disco9"
+    ;
+    justify-content: center;
+    gap: 1.25rem;
+} 
 
 iframe{
     margin: 1.25rem 1.875rem 1.875rem 1.25rem;
