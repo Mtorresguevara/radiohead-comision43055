@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Tipografias
+font-family: 'Caladea', serif;
+font-family: 'Luckiest Guy', cursive;
+*/
+
+.imagen-logo{
+    width: 4.375rem;
+    border-radius: 50%;
+}
+
+.navbar{
+    background-color: black;
+    width: 79.6875rem;
+    list-style: none;
+    background-color: black;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    font-family: 'Caladea', serif;
+
+}
+
+section h1{
+    color: red;
+    text-align: center;
+    font-size: 6.25rem;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 1.875rem;
+    
+}
+
+.foto-banda{
+    background-size: cover;
+    width: 79.6875rem;
+    
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: 3.125rem;
+    font-family: 'Caladea', serif;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    
+}
+
+.biografia{
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: .625rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: 1.875rem;
+    margin-left: .9375rem;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Caladea', serif;
+    margin-top: 3.75rem;
+
+}
+
+section h3{
+    font-family: 'Caladea', serif;
+    font-size: 1.25rem;
+    margin-left: .9375rem
+
+}
+
+.imagen-integrantes{
+    width: 12.5rem;
+    height: 15.625rem;
+    padding: .9375rem;
+    background-color: black;
+    border: .125rem;
+    margin-top: 1.25rem;
+    margin-right: 4.375rem;
+    margin-bottom: .625rem;
+    margin-left: 2.5rem;
+
+}
+
+.integrantes{
+    font-family: 'Caladea', serif;
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
+    margin-left: .9375rem;
+    
+}
+
+.imagen-disco{
+    width: 11.25rem;
+    height: 11.25rem;
+    background-color: black;
+    border-width: .3125rem;
+    border-color: red;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    margin: 1.5625rem 1.875rem .3125rem 1.875rem
+    
+}
+
+h4{
+    font-family: 'Caladea', serif;
+    font-size: 1.25rem;
+    margin-left: .9375rem
+
+}
+
+iframe{
+    margin: 1.25rem 1.875rem 1.875rem 1.25rem;
+    
+}
+
+form{
+    padding: 3.125rem 3.4375rem;
+    margin-left: 12.5rem;
+    text-align: center;
+    width: 37.5rem;
+    font-family: 'Caladea', serif;
+    
+}
+
+input{
+    margin-bottom: 1.25rem;
+    border-style: solid;
+    font-family: 'Caladea', serif;
+    
+}
