@@ -26,10 +26,8 @@ header{
 }
 
 .imagen-logo{
-    width: 4.375rem;
+    max-width: 3rem;
     border-radius: 50%;
-    margin-top: .125rem;
-    margin-left: .625rem;
 }
 
 .navbar{
@@ -143,16 +141,17 @@ footer{
     
 }
 
-section h3{
+section div h3{
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
     margin-bottom: .3125rem;
     text-align: center;
+
 }
 
 .card img{
     width: 12.5rem;
-    height: 15.625rem;
+    height: 16.875rem;
     padding: .9375rem;
     border-radius: 1.875rem;
     margin-top: 1.25rem;
@@ -181,12 +180,13 @@ section h3{
 
 .card{
     width: 25rem;
-    height: 51.5625rem;
+    height: 100%;
     border: .625rem solid rgb(14, 12, 12);
     border-radius: 1.25rem;
     margin-left: 1.25rem;
     margin-bottom: 30px;
-    background-color: rgb(248, 230, 230) ;
+    background-color: rgb(248, 230, 230);
+    position: static;
 }
 
 .contenido{
@@ -299,3 +299,94 @@ textarea{
 textarea:focus{
     background-color: rgb(216, 211, 213);
 }
+
+@media screen and (max-width:320px){
+
+header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.nav{
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-right:0;
+    background-color: black;
+    box-shadow: rgb(44, 42, 42);
+}
+
+.navbar{
+    flex-direction: column;
+    align-items: center;
+}
+.nav li a{
+    font-size: .875rem;
+    font-family: 'Caladea', serif;
+}
+
+h2{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
+    font-size: 40px;
+    font-family: 'Caladea', serif;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+section div h3{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.integrantes{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    
+}
+
+
+.cards-container{
+    width: 90%;
+    align-items: center;
+    
+}
+
+.card img{
+    margin-left: 20px;
+}
+
+div textarea{
+    width: 500px;
+    height: 200px;
+}
+span{
+    font-size: .875rem;
+}
+fieldset legend{
+    font-size: smaller;
+    border: .0625rem solid black;
+    background-color:rgba(189, 141, 160, 0.753) ;
+}
+
+input:focus{
+    background-color: rgba(189, 141, 160, 0.753);
+    
+}
+
+textarea:focus{
+    background-color: rgba(189, 141, 160, 0.753);
+}
+
+}
+
+
+
+
