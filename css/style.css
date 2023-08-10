@@ -14,12 +14,14 @@ font-family: 'Luckiest Guy', cursive;
 
 header{
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: .30rem;
     background-color: black;
     align-items: center;
     position: sticky;
+    top: 0;
     
 }
 
@@ -86,37 +88,34 @@ h2{
     text-align: justify;
     text-indent: .625rem;
     font-family: 'Caladea', serif;
-    margin-bottom: 1.875rem;
     margin-left: 1.25rem;
     margin-right: 1.875rem;
-}
-
-.seccion-principal{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: 19.6875rem 19.6875rem 19.6875rem ;
-    grid-template-areas: 
-    "section-bio div1 "
-    "section-bio div2 "
-    "section-bio div3"
-    ;
-    margin-bottom: 1.875rem;
     
 }
 
-.section-fotos{
+.imagenes-bio{
+    display: grid;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    padding-right: 1.875rem;
-
+    grid-template-columns: repeat(2 50%);
+    grid-template-rows: 18.75rem 18.75rem;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    
+    ;
+    justify-content: center;
+    gap: .625rem;
+    margin-top: 1.25rem;
 }
 
-.seccion-principal .section-bio{
-    display: flex;
-    align-items: center;
+.imagenes-bio div{
+    width: 100%;
+    height: 100%;
+}
+.imagenes-bio div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 footer{
@@ -157,7 +156,8 @@ section h3{
     padding: .9375rem;
     border-radius: 1.875rem;
     margin-top: 1.25rem;
-    margin-left: 2.5rem;
+    margin-left: 5rem;
+    
 }
 
 .integrantes{
@@ -242,9 +242,20 @@ section h3{
 }
 
 
-iframe{
-    margin: 1.25rem 1.875rem 1.875rem 1.25rem;
-    
+.videogal h5{
+    font-family: 'Caladea', serif;
+    font-size: 1.875rem;
+    font-weight: bolder;
+    color: rgb(226, 43, 55);
+    text-align: center;
+    margin-bottom: .625rem;
+}
+.videoarea{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
 }
 
 form{
