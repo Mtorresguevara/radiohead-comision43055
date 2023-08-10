@@ -194,7 +194,7 @@ section div h3{
     text-align: center;
 }
 
-.contenido h2{
+.contenido h4{
     margin-top: .3125rem;
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
@@ -328,13 +328,13 @@ header{
     font-family: 'Caladea', serif;
 }
 
-h2{
+.titulo{
+    font-size: 1.875rem;
+    font-family: 'Caladea', serif;
     text-align: center;
     color: rgba(255, 255, 255, 0.928);
     background-color: rgb(231, 11, 11);
-    font-size: 2.5rem;
-    font-family: 'Caladea', serif;
-    margin-top: 1.875rem;
+    margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
 
@@ -352,6 +352,11 @@ section div h3{
     
 }
 
+.card{
+    border: .4375rem solid black;
+    align-items: center;
+    
+}
 
 .cards-container{
     width: 90%;
@@ -361,6 +366,7 @@ section div h3{
 
 .card img{
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 div textarea{
@@ -434,7 +440,9 @@ section div h3{
     
 }
 
-
+.card{
+    border: .4375rem solid black;
+}
 .cards-container{
     width: 90%;
     align-items: center;
