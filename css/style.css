@@ -91,7 +91,7 @@ h2{
     margin-right: 1.875rem;
 }
 
-.container-principal{
+.seccion-principal{
     display: grid;
     width: 100%;
     height: 100%;
@@ -106,7 +106,7 @@ h2{
     
 }
 
-section div img{
+.section-fotos{
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -114,62 +114,109 @@ section div img{
 
 }
 
+.seccion-principal .section-bio{
+    display: flex;
+    align-items: center;
+}
+
 footer{
     display: flex;
-    justify-content:center;
-    gap:.9375rem;
+    width: 100%;
+    justify-content:space-between;
     background-color: black;
     color: white;
     font-family: 'Caladea', serif;
-    margin-top: 3.75rem;
+    margin-top: 1.25rem;
+    
+}
+
+.copyright{
+    display: flex;
+    font-family: 'Caladea', serif;
+    font-size: small;
+}
+
+.redes{
+    display: flex;
+    margin-right: .625rem;
+    gap: .9375rem;
+    justify-content: center;
     
 }
 
 section h3{
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
-    margin-left: .9375rem
+    margin-bottom: .3125rem;
+    text-align: center;
 }
 
-.imagen-integrantes{
+.card img{
     width: 12.5rem;
     height: 15.625rem;
     padding: .9375rem;
-    background-color: black;
-    border: .125rem;
+    border-radius: 1.875rem;
     margin-top: 1.25rem;
-    margin-right: 4.375rem;
-    margin-bottom: .625rem;
     margin-left: 2.5rem;
 }
 
 .integrantes{
     font-family: 'Caladea', serif;
     font-size: 1rem;
-    margin-bottom: 1.875rem;
+    text-align: justify;
+    margin-bottom: 2.1875rem;
     margin-left: .9375rem;
+    margin-right: .9375rem;
     
 }
 
-.imagen-disco{
-    width: 11.25rem;
-    height: 11.25rem;
-    background-color: black;
-    border-width: .3125rem;
-    border-color: red;
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
-    margin: 1.5625rem 1.875rem .3125rem 1.875rem
+.cards-container{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
-h4{
+.card{
+    width: 25rem;
+    height: 51.5625rem;
+    border: .625rem solid rgb(14, 12, 12);
+    border-radius: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 30px;
+    background-color: rgb(248, 230, 230) ;
+}
+
+.contenido{
+    padding: .625rem;
+    text-align: center;
+}
+
+.contenido h2{
+    margin-top: .3125rem;
     font-family: 'Caladea', serif;
     font-size: 1.25rem;
-    margin-left: .9375rem;
-    text-align: center;
-
+    color: black;
 }
-.container-discos{ 
+
+.foto-disco{
+    background-color: rgb(248, 230, 230);
+    box-shadow: 0rem .25rem .5rem 0rem rgb(25, 25, 26) ;
+    background-size: cover;
+    border: .0625rem solid rgba(13, 13, 14, 0.943);
+    border-radius: .3125rem;
+}
+
+
+.imagen-disco{
+    width: 100%;
+}
+
+.discos{ 
+    width: 80%;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: repeat(3 1fr);
     grid-template-columns: repeat(3 1fr);
@@ -179,8 +226,21 @@ h4{
     "disco7 disco8 disco9"
     ;
     justify-content: center;
-    gap: 1.25rem;
+    grid-gap: 2.5rem;
 } 
+
+.contenido a{
+    margin-top: .625rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(226, 43, 55);
+    color: black;
+    font-size: 1.125rem;
+    font-family: 'Caladea', serif;
+    border-radius: 50%;
+    padding: .3125rem 1.125rem;
+}
+
 
 iframe{
     margin: 1.25rem 1.875rem 1.875rem 1.25rem;
@@ -193,12 +253,38 @@ form{
     text-align: center;
     width: 37.5rem;
     font-family: 'Caladea', serif;
+    font-size: 1.25rem;
     
 }
 
 input{
     margin-bottom: 1.25rem;
     border-style: solid;
-    font-family: 'Caladea', serif;
     
+}
+
+input:focus{
+    background-color: rgb(216, 211, 213);
+    
+}
+
+legend{
+    font-family: 'Caladea', serif;
+    font-weight: bolder;
+    font-size: 1.5625rem;
+}
+
+span{
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+textarea{
+    border-radius: .625rem;
+    border-style: solid;
+}
+
+textarea:focus{
+    background-color: rgb(216, 211, 213);
 }
