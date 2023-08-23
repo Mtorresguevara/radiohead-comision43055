@@ -184,7 +184,7 @@ section div h3{
     border: .625rem solid rgb(14, 12, 12);
     border-radius: 1.25rem;
     margin-left: 1.25rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     background-color: rgb(248, 230, 230);
     position: static;
 }
@@ -216,7 +216,7 @@ section div h3{
 
 .discos{ 
     width: 80%;
-    margin: 100px auto;
+    margin: 6.25rem auto;
     display: grid;
     grid-template-columns: repeat(3 1fr);
     grid-template-columns: repeat(3 1fr);
@@ -256,6 +256,19 @@ section div h3{
     align-items: center;
     justify-content: center;
     gap: .625rem;
+}
+
+.vid iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin-left: .9375rem;
+    margin-right: 1.25rem;
 }
 
 form{
@@ -328,6 +341,27 @@ header{
     font-family: 'Caladea', serif;
 }
 
+section h1{
+    font-size: 1.875rem;
+    margin-bottom: 3.75rem;
+}
+
+/*.foto-banda{
+    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
+    width:60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}*/
+
+.imagenes-bio{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .titulo{
     font-size: 1.875rem;
     font-family: 'Caladea', serif;
@@ -359,19 +393,41 @@ section div h3{
 }
 
 .cards-container{
-    width: 90%;
+    width: 100%;
     align-items: center;
     
 }
 
 .card img{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: 12.5rem;
+}
+
+.discos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1.875rem;
+}
+
+h4{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    font-weight: bold;
+
+}
+
+.button{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
 }
 
 div textarea{
-    width: 500px;
-    height: 200px;
+    width: 31.25rem;
+    height: 12.5rem;
 }
 span{
     font-size: .875rem;
@@ -392,6 +448,78 @@ textarea:focus{
 }
 
 }
+
+@media screen and (max-width:375px){
+    
+    section div h3{
+        width: 12.5rem
+    }
+
+    /* agregar medias query index*/
+section h1{
+    font-size: .9375rem;
+    margin-bottom: .9375rem;
+    
+}
+
+.foto-banda{
+    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.imagenes-bio{
+    display: flex;
+    flex-direction: column;
+}
+/*fin medias queries index*/
+
+    .card{
+        border: .4375rem solid black;
+        align-items: center;
+        
+    }
+    
+    .cards-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .card img{
+        margin-left: 3.75rem;
+        margin-right:70px;
+    }
+
+    /*dicsografia*/
+.discos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1.875rem;
+    
+}
+
+h4{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    font-weight: bold;
+
+}
+
+.button{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+}
+
+    }
 
 @media screen and (max-width:425px){
 
@@ -421,10 +549,42 @@ textarea:focus{
     font-family: 'Caladea', serif;
 }
 
-h2{
+section h1{
+    font-size: 2.8125rem;
+    margin-bottom: 6.25rem;
+    
+}
+
+.foto-banda{
+    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.imagenes-bio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.titulo{
+    font-size: 1.875rem;
+    font-family: 'Caladea', serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/*h2{
     font-size: 2.8125rem;
     font-family: 'Caladea', serif;
-}
+}*/
 
 section div h3{
     font-size: .9375rem;
@@ -435,7 +595,7 @@ section div h3{
 }
 
 .integrantes{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Caladea', serif;
     
 }
@@ -450,16 +610,39 @@ section div h3{
 }
 
 .card img{
-    margin-right: 20px;
+    margin-right: 1.25rem;
+}
+
+.discos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 1.875rem;
+}
+
+h4{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    font-weight: bold;
+
+}
+
+.button{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
 }
 
 div textarea{
     width: 34.375rem;
-    height: 230px;
+    height: 14.375rem;
 }
+
 span{
     font-size: .875rem;
 }
+
 fieldset legend{
     font-size: smaller;
     border: .0625rem solid black;
@@ -476,6 +659,79 @@ textarea:focus{
 }
 
 }
+
+@media screen and (max-width:683px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.nav{
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-right:0;
+    background-color: black;
+    box-shadow: rgb(44, 42, 42);
+}
+
+.navbar{
+    flex-direction: column;
+    align-items: center;
+}
+.nav li a{
+    font-size: 1rem;
+    font-family: 'Caladea', serif;
+}
+
+/* agregar medias query index*/
+section h1{
+    font-size: 2.5rem;
+    margin-bottom: 12.5rem;
+    
+}
+
+.foto-banda{
+    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.imagenes-bio{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 65px;
+}
+
+.discos{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 1.875rem;
+    
+}
+
+h4{
+    font-size: 2.1875rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    font-weight: bold;
+
+}
+
+.button{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+}
+    }
 
 @media screen and (max-width:768px){
 
@@ -517,7 +773,29 @@ section div h3{
     
 }
 
+.discos{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1.875rem;
 }
+
+h4{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    margin-bottom: .3125rem;
+    font-weight: bold;
+
+}
+
+.button{
+    font-size: .9375rem;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+}
+
+}
+
 
 @media screen and (max-width:1024px){
 
@@ -541,6 +819,20 @@ section div h3{
     .integrantes{
         font-family: 'Caladea', serif;
         
+    }
+
+    h4{
+        font-size: 2.5rem;
+        font-family: 'Caladea', serif;
+        margin-bottom: .3125rem;
+        font-weight: bold;
+    
+    }
+    
+    .button{
+        font-size: 1.25rem;
+        font-family: 'Caladea', serif;
+        font-weight: bold;
     }
     
 
