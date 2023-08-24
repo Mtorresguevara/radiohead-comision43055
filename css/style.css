@@ -1,847 +1,473 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Luckiest+Guy&display=swap');
+/* variables, mixins y funciones*/
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Luckiest+Guy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* 
-Tipografias
-font-family: 'Caladea', serif;
-font-family: 'Luckiest Guy', cursive;
-*/
-
-header{
+/* todo lo correspondiente al codigo*/
+body {
+  background-color: #eae2e2; }
+  body header {
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 100%;
     background-color: black;
-    align-items: center;
     position: sticky;
-    top: 0;
-    
-}
-
-.imagen-logo{
+    top: 0; }
+  body .imagen-logo {
     max-width: 3rem;
-    border-radius: 50%;
-}
-
-.navbar{
+    border-radius: 50%; }
+  body .navbar {
     display: flex;
     list-style: none;
-    cursor: pointer;
-    
-}
+    cursor: pointer; }
+    body .navbar li a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.928);
+      font-size: 1.125rem;
+      font-family: 'Caladea', serif;
+      margin-right: 1.25rem;
+      gap: .625rem; }
 
-.navbar li a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.928);
-    font-size: 1.125rem;
-    font-family: 'Caladea', serif;
-    margin-right: 1.25rem;
-    gap: .625rem;
-
-}
-
-section h1{
-    color: rgb(231, 11, 11);
+.foto-banda {
+  background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+  width: 100%;
+  height: 31.25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 90%; }
+  .foto-banda div h1 {
+    color: #e70b0b;
     text-align: center;
     font-size: 6.25rem;
     font-family: 'Luckiest Guy', cursive;
-    padding: 1.875rem;
-    
-}
+    padding: 1.875rem; }
 
-.foto-banda{
-    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
-    width:100%;
-    height: 31.25rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 90%;
-    
-}
+h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.928);
+  background-color: #e70b0b;
+  font-size: 2.8125rem;
+  font-family: "Caladea", serif;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
 
-body{
-    background-color: rgb(234, 226, 226);
-}
+.section-bio .biografia {
+  font-size: 16px;
+  text-align: justify;
+  text-indent: .625rem;
+  font-family: "Caladea", serif;
+  margin-left: 1.25rem;
+  margin-right: 1.875rem; }
 
-h2{
-    text-align: center;
-    color: rgba(255, 255, 255, 0.928);
-    background-color: rgb(231, 11, 11);
-    font-size: 2.8125rem;
-    font-family: 'Caladea', serif;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-    
-}
-
-.biografia{
-    font-size: 16px;
-    text-align: justify;
-    text-indent: .625rem;
-    font-family: 'Caladea', serif;
-    margin-left: 1.25rem;
-    margin-right: 1.875rem;
-    
-}
-
-.imagenes-bio{
-    display: grid;
+.imagenes-bio {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 18.75rem);
+  grid-template-areas: "img1 img2" "img3 img4";
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  margin-top: 1.25rem; }
+  .imagenes-bio div {
     width: 100%;
-    grid-template-columns: repeat(2 50%);
-    grid-template-rows: 18.75rem 18.75rem;
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4"
-    
-    ;
-    justify-content: center;
-    gap: .625rem;
-    margin-top: 1.25rem;
-}
+    height: 100%; }
+    .imagenes-bio div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
-.imagenes-bio div{
-    width: 100%;
-    height: 100%;
-}
-.imagenes-bio div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-footer{
-    display: flex;
-    width: 100%;
-    justify-content:space-between;
-    background-color: black;
-    color: white;
-    font-family: 'Caladea', serif;
-    margin-top: 1.25rem;
-    
-}
-
-.copyright{
-    display: flex;
-    font-family: 'Caladea', serif;
-    font-size: small;
-}
-
-.redes{
-    display: flex;
-    margin-right: .625rem;
-    gap: .9375rem;
-    justify-content: center;
-    
-}
-
-section div h3{
-    font-family: 'Caladea', serif;
-    font-size: 1.25rem;
-    margin-bottom: .3125rem;
-    text-align: center;
-
-}
-
-.card img{
-    width: 12.5rem;
-    height: 16.875rem;
-    padding: .9375rem;
-    border-radius: 1.875rem;
-    margin-top: 1.25rem;
-    margin-left: 5rem;
-    
-}
-
-.integrantes{
-    font-family: 'Caladea', serif;
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: 2.1875rem;
-    margin-left: .9375rem;
-    margin-right: .9375rem;
-    
-}
-
-.cards-container{
-    display: flex;
-    width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-.card{
+.cards-container {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .cards-container .card {
     width: 25rem;
     height: 100%;
-    border: .625rem solid rgb(14, 12, 12);
+    border: 0.625rem solid #0e0c0c;
     border-radius: 1.25rem;
     margin-left: 1.25rem;
     margin-bottom: 1.875rem;
-    background-color: rgb(248, 230, 230);
-    position: static;
-}
+    background-color: #f8e6e6;
+    position: static; }
+    .cards-container .card img {
+      width: 12.5rem;
+      height: 16.875rem;
+      padding: .9375rem;
+      border-radius: 1.875rem;
+      margin-top: 1.25rem;
+      margin-left: 5rem; }
+    .cards-container .card h3 {
+      font-family: "Caladea", serif;
+      font-size: 1.25rem;
+      margin-bottom: .3125rem;
+      text-align: center; }
+    .cards-container .card .integrantes {
+      font-family: "Caladea", serif;
+      font-size: 1rem;
+      text-align: justify;
+      margin-bottom: 2.1875rem;
+      margin-left: .9375rem;
+      margin-right: .9375rem; }
 
-.contenido{
+.discos {
+  width: 80%;
+  margin: 6.25rem auto;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-columns: repeat(3 1fr);
+  grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6" "disco7 disco8 disco9";
+  justify-content: center;
+  grid-gap: 2.5rem; }
+
+.foto-disco {
+  background-color: #f8e6e6;
+  box-shadow: 0rem 0.25rem 0.5rem 0rem #19191a;
+  background-size: cover;
+  border: 0.0625rem solid #0e0c0c;
+  border-radius: .3125rem; }
+  .foto-disco img {
+    width: 100%; }
+  .foto-disco .contenido {
     padding: .625rem;
-    text-align: center;
-}
+    text-align: center; }
+    .foto-disco .contenido h4, .foto-disco .contenido a {
+      margin-top: .3125rem;
+      font-family: "Caladea", serif;
+      font-size: 1.25rem;
+      color: black; }
+    .foto-disco .contenido a {
+      margin-top: .625rem;
+      text-decoration: none;
+      display: inline-block;
+      background-color: #e22b37;
+      border-radius: 50%;
+      padding: .3125rem 1.125rem; }
 
-.contenido h4{
-    margin-top: .3125rem;
-    font-family: 'Caladea', serif;
-    font-size: 1.25rem;
-    color: black;
-}
+.videogal h5 {
+  font-family: "Caladea", serif;
+  font-size: 1.875rem;
+  font-weight: bolder;
+  color: #e22b37;
+  text-align: center;
+  margin-bottom: .625rem; }
 
-.foto-disco{
-    background-color: rgb(248, 230, 230);
-    box-shadow: 0rem .25rem .5rem 0rem rgb(25, 25, 26) ;
-    background-size: cover;
-    border: .0625rem solid rgba(13, 13, 14, 0.943);
-    border-radius: .3125rem;
-}
-
-
-.imagen-disco{
-    width: 100%;
-}
-
-.discos{ 
-    width: 80%;
-    margin: 6.25rem auto;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-columns: repeat(3 1fr);
-    grid-template-areas: 
-    "disco1 disco2 disco3"
-    "disco4 disco5 disco6"
-    "disco7 disco8 disco9"
-    ;
-    justify-content: center;
-    grid-gap: 2.5rem;
-} 
-
-.contenido a{
-    margin-top: .625rem;
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgb(226, 43, 55);
-    color: black;
-    font-size: 1.125rem;
-    font-family: 'Caladea', serif;
-    border-radius: 50%;
-    padding: .3125rem 1.125rem;
-}
-
-
-.videogal h5{
-    font-family: 'Caladea', serif;
-    font-size: 1.875rem;
-    font-weight: bolder;
-    color: rgb(226, 43, 55);
-    text-align: center;
-    margin-bottom: .625rem;
-}
-.videoarea{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: .625rem;
-}
-
-.vid iframe{
+.videogal .videoarea {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem; }
+  .videogal .videoarea div iframe {
     height: 100%;
+    width: 100%; }
+
+.videogal div .carousel-item {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  margin-left: .9375rem;
+  margin-right: 1.25rem; }
+
+form {
+  padding: 3.125rem 3.4375rem;
+  margin-left: 12.5rem;
+  text-align: center;
+  width: 37.5rem;
+  font-family: "Caladea", serif;
+  font-size: 1.25rem; }
+
+fieldset legend {
+  font-family: "Caladea", serif;
+  font-weight: bolder;
+  font-size: 1.5625rem; }
+
+fieldset span {
+  font-family: "Caladea", serif;
+  font-weight: bold;
+  font-size: 1.25rem; }
+
+fieldset input {
+  margin-bottom: 1.25rem;
+  border-style: solid; }
+  fieldset input:focus {
+    background-color: #d8d3d5; }
+
+fieldset textarea {
+  border-radius: .625rem;
+  border-style: solid; }
+  fieldset textarea:focus {
+    background-color: #d8d3d5; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Caladea", serif;
+  margin-top: 1.25rem; }
+  footer div .copyright {
+    font-family: "Caladea", serif;
+    font-size: small; }
+  footer div .redes {
+    margin-right: .625rem;
+    gap: .9375rem;
+    justify-content: center; }
+
+/*al final los mediaquerie*/
+@media screen and (max-width: 1024px) {
+  header .imagen-logo {
+    margin-left: 1.25rem; } }
+
+@media screen and (max-width: 768px) {
+  header .imagen-logo {
+    margin-left: 1.25rem; } }
+
+main .foto-banda {
+  background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 15rem; }
+  main .foto-banda div h1 {
+    font-size: 5.625rem;
+    margin-bottom: 3.4375rem; }
+
+.imagenes-bio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  object-fit: cover; }
+  .imagenes-bio div img {
+    margin-left: .625rem; }
+
+.videogal .videoarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem; }
+
+fieldset legend {
+  font-weight: bolder;
+  font-size: 1.875rem; }
+
+fieldset span {
+  font-size: 1.875rem; }
+
+.discos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.875rem;
+  width: 40%; }
+
+@media screen and (max-width: 683px) {
+  main .foto-banda {
+    background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
     width: 100%;
-}
-
-.carousel-item{
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    margin-left: .9375rem;
-    margin-right: 1.25rem;
-}
-
-form{
-    padding: 3.125rem 3.4375rem;
-    margin-left: 12.5rem;
-    text-align: center;
-    width: 37.5rem;
-    font-family: 'Caladea', serif;
-    font-size: 1.25rem;
-    
-}
-
-input{
-    margin-bottom: 1.25rem;
-    border-style: solid;
-    
-}
-
-input:focus{
-    background-color: rgb(216, 211, 213);
-    
-}
-
-legend{
-    font-family: 'Caladea', serif;
-    font-weight: bolder;
-    font-size: 1.5625rem;
-}
-
-span{
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-textarea{
-    border-radius: .625rem;
-    border-style: solid;
-}
-
-textarea:focus{
-    background-color: rgb(216, 211, 213);
-}
-
-@media screen and (max-width:320px){
-
-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-.nav{
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding-right:0;
-    background-color: black;
-    box-shadow: rgb(44, 42, 42);
-}
-
-.navbar{
-    flex-direction: column;
-    align-items: center;
-}
-.nav li a{
-    font-size: .875rem;
-    font-family: 'Caladea', serif;
-}
-
-section h1{
-    font-size: 1.875rem;
-    margin-bottom: 3.75rem;
-}
-
-/*.foto-banda{
-    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
-    width:60%;
-    background-repeat: no-repeat;
+    height: 100%;
     background-size: cover;
-    
-}*/
-
-.imagenes-bio{
+    background-repeat: no-repeat;
+    padding-bottom: 12.5rem; }
+    main .foto-banda div h1 {
+      font-size: 3.75rem;
+      margin-bottom: 3.125rem; }
+  .imagenes-bio {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    object-fit: cover; }
+    .imagenes-bio div img {
+      margin-left: .625rem; } }
 
-.titulo{
+.videogal .videoarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .625rem; }
+
+fieldset legend {
+  font-weight: bolder;
+  font-size: 1.875rem; }
+
+fieldset span {
+  font-size: 1.875rem; }
+
+@media screen and (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .nav {
+    flex-direction: column;
+    align-items: center; }
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+  .nav ul li a {
+    font-size: 1rem; }
+  main .foto-banda {
+    background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3.75rem; }
+    main .foto-banda div h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3.125rem; }
+  main h2 {
     font-size: 1.875rem;
-    font-family: 'Caladea', serif;
     text-align: center;
     color: rgba(255, 255, 255, 0.928);
-    background-color: rgb(231, 11, 11);
+    background-color: #e70b0b;
     margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-
-section div h3{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.integrantes{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    
-}
-
-.card{
-    border: .4375rem solid black;
-    align-items: center;
-    
-}
-
-.cards-container{
+    margin-bottom: 1.25rem; }
+  .section-bio .biografia {
+    font-size: .875rem; }
+  .imagenes-bio {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: center;
-    
-}
+    object-fit: cover; }
+    .imagenes-bio div img {
+      margin-left: .625rem; } }
 
-.card img{
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    width: 12.5rem;
-}
-
-.discos{
+@media screen and (max-width: 375px) {
+  header {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-top: 1.875rem;
-}
-
-h4{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    font-weight: bold;
-
-}
-
-.button{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-}
-
-div textarea{
-    width: 31.25rem;
-    height: 12.5rem;
-}
-span{
-    font-size: .875rem;
-}
-fieldset legend{
-    font-size: smaller;
-    border: .0625rem solid black;
-    background-color:rgba(189, 141, 160, 0.753) ;
-}
-
-input:focus{
-    background-color: rgba(189, 141, 160, 0.753);
-    
-}
-
-textarea:focus{
-    background-color: rgba(189, 141, 160, 0.753);
-}
-
-}
-
-@media screen and (max-width:375px){
-    
-    section div h3{
-        width: 12.5rem
-    }
-
-    /* agregar medias query index*/
-section h1{
-    font-size: .9375rem;
-    margin-bottom: .9375rem;
-    
-}
-
-.foto-banda{
-    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
-    width:100%;
+    align-items: center;
+    justify-content: center; }
+  .nav {
+    flex-direction: column;
+    align-items: center; }
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+  .nav ul li a {
+    font-size: .875rem; }
+  main .foto-banda {
+    background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+    width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
-    
-}
-
-.imagenes-bio{
-    display: flex;
-    flex-direction: column;
-}
-/*fin medias queries index*/
-
-    .card{
-        border: .4375rem solid black;
-        align-items: center;
-        
-    }
-    
-    .cards-container{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    
-    .card img{
-        margin-left: 3.75rem;
-        margin-right:70px;
-    }
-
-    /*dicsografia*/
-.discos{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-top: 1.875rem;
-    
-}
-
-h4{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    font-weight: bold;
-
-}
-
-.button{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-}
-
-    }
-
-@media screen and (max-width:425px){
-
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-.nav{
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding-right:0;
-    background-color: black;
-    box-shadow: rgb(44, 42, 42);
-}
-
-.navbar{
-    flex-direction: column;
-    align-items: center;
-}
-.nav li a{
-    font-size: 1rem;
-    font-family: 'Caladea', serif;
-}
-
-section h1{
-    font-size: 2.8125rem;
-    margin-bottom: 6.25rem;
-    
-}
-
-.foto-banda{
-    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
-    width:100%;
-    height: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    
-}
-
-.imagenes-bio{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20%;
-}
-
-.titulo{
+    padding-bottom: 2.5rem; }
+    main .foto-banda div h1 {
+      font-size: 2.5rem;
+      margin-bottom: 3.125rem; }
+  main h2 {
     font-size: 1.875rem;
-    font-family: 'Caladea', serif;
     text-align: center;
     color: rgba(255, 255, 255, 0.928);
-    background-color: rgb(231, 11, 11);
+    background-color: #e70b0b;
     margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-
-/*h2{
-    font-size: 2.8125rem;
-    font-family: 'Caladea', serif;
-}*/
-
-section div h3{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.integrantes{
-    font-size: 1.125rem;
-    font-family: 'Caladea', serif;
-    
-}
-
-.card{
-    border: .4375rem solid black;
-}
-.cards-container{
-    width: 90%;
-    align-items: center;
-    
-}
-
-.card img{
-    margin-right: 1.25rem;
-}
-
-.discos{
+    margin-bottom: 1.25rem; }
+  .section-bio .biografia {
+    font-size: .875rem; }
+  .imagenes-bio {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-top: 1.875rem;
-}
+    width: 100%;
+    object-fit: cover; }
+    .imagenes-bio div img {
+      margin-left: .625rem; } }
 
-h4{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    font-weight: bold;
-
-}
-
-.button{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-}
-
-div textarea{
-    width: 34.375rem;
-    height: 14.375rem;
-}
-
-span{
-    font-size: .875rem;
-}
-
-fieldset legend{
-    font-size: smaller;
-    border: .0625rem solid black;
-    background-color:rgba(189, 141, 160, 0.753) ;
-}
-
-input:focus{
-    background-color: rgba(189, 141, 160, 0.753);
-    
-}
-
-textarea:focus{
-    background-color: rgba(189, 141, 160, 0.753);
-}
-
-}
-
-@media screen and (max-width:683px){
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-.nav{
+@media screen and (max-width: 320px) {
+  header {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding-right:0;
-    background-color: black;
-    box-shadow: rgb(44, 42, 42);
-}
-
-.navbar{
+    justify-content: center; }
+  .nav {
     flex-direction: column;
-    align-items: center;
-}
-.nav li a{
-    font-size: 1rem;
-    font-family: 'Caladea', serif;
-}
-
-/* agregar medias query index*/
-section h1{
-    font-size: 2.5rem;
-    margin-bottom: 12.5rem;
-    
-}
-
-.foto-banda{
-    background-image: url(../asset/img/radiohead-band\ \(1\).jpeg);
-    width:100%;
+    align-items: center; }
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+  .nav ul li a {
+    font-size: .875rem; }
+  main .foto-banda {
+    background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+    width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
-    
-}
-
-.imagenes-bio{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-left: 65px;
-}
-
-.discos{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-top: 1.875rem;
-    
-}
-
-h4{
-    font-size: 2.1875rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    font-weight: bold;
-
-}
-
-.button{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-}
-    }
-
-@media screen and (max-width:768px){
-
-.header{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.imagen-logo{
-    margin-left: 3.125rem;
-}
-
-.navbar{
-    margin-right: 2.1875rem;
-}
-
-.nav li a{
-    font-size: 1.0625rem;
-    font-family: 'Caladea', serif;
-}
-
-h2{
-    font-size: 3.4375rem;
-    font-family: 'Caladea', serif;
-}
-
-section div h3{
-    font-size: 1.125rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
+    background-repeat: no-repeat;
+    padding-bottom: 1.25rem; }
+    main .foto-banda div h1 {
+      font-size: 1.875rem;
+      margin-bottom: 3.125rem; }
+  main h2 {
+    font-size: 1.875rem;
     text-align: center;
-    font-weight: bolder;
-}
-
-.integrantes{
-    font-size: 1.0625rem;
-    font-family: 'Caladea', serif;
-    
-}
-
-.discos{
+    color: rgba(255, 255, 255, 0.928);
+    background-color: #e70b0b;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem; }
+  .section-bio .biografia {
+    font-size: .875rem; }
+  .imagenes-bio {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-top: 1.875rem;
-}
+    width: 100%;
+    object-fit: cover; }
+    .imagenes-bio div img {
+      margin-left: .625rem; } }
 
-h4{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    margin-bottom: .3125rem;
-    font-weight: bold;
+.cards-container {
+  width: 100%;
+  align-items: center; }
+  .cards-container .card {
+    border: .4375rem solid black;
+    align-items: center; }
+    .cards-container .card img {
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      width: 12.5rem; }
+      .cards-container .card img h3 {
+        font-size: .875rem; }
+  .cards-container .integrantes {
+    font-size: .875rem; }
 
-}
+.foto-disco div h4, .foto-disco div .contenido a, .foto-disco .contenido div a {
+  font-size: .9375rem;
+  margin-bottom: .3125rem;
+  font-weight: bold; }
 
-.button{
-    font-size: .9375rem;
-    font-family: 'Caladea', serif;
-    font-weight: bold;
-}
+.foto-disco div .button {
+  font-size: .9375rem;
+  font-weight: bold; }
 
-}
+fieldset legend {
+  font-weight: bolder;
+  font-size: smaller; }
 
+fieldset span {
+  font-size: .875rem; }
 
-@media screen and (max-width:1024px){
+fieldset input {
+  margin-bottom: 1.25rem;
+  border-style: solid; }
+  fieldset input:focus {
+    background-color: #d8d3d5; }
 
-    .imagen-logo{
-        margin-left: 1.25rem;
-    }
-    
-    .nav li a{
-        font-family: 'Caladea', serif;
-    }
-    
-    h2{
-        font-family: 'Caladea', serif;
-    }
-    
-    section div h3{
-        font-family: 'Caladea', serif;
-        font-weight: bolder;
-    }
-    
-    .integrantes{
-        font-family: 'Caladea', serif;
-        
-    }
+fieldset textarea {
+  width: 31.25rem;
+  height: 12.5rem; }
 
-    h4{
-        font-size: 2.5rem;
-        font-family: 'Caladea', serif;
-        margin-bottom: .3125rem;
-        font-weight: bold;
-    
-    }
-    
-    .button{
-        font-size: 1.25rem;
-        font-family: 'Caladea', serif;
-        font-weight: bold;
-    }
-    
-
-}
-
-
-
-
-
-
-
-
+fieldset .button {
+  font-size: .9375rem;
+  font-weight: bold; }

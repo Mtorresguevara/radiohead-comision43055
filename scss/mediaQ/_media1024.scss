@@ -1,0 +1,403 @@
+
+@media screen and (max-width:1024px){
+    header{
+        .imagen-logo{
+            margin-left: 1.25rem;
+        }
+    
+    }
+    }
+    
+    
+@media screen and (max-width:768px){
+
+header{
+    .imagen-logo{
+        margin-left: 1.25rem;
+    }
+
+}
+}
+main{
+    .foto-banda{
+        background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 15rem;
+    div{
+        h1{
+            font-size: 5.625rem;
+            margin-bottom: 3.4375rem;
+            }
+        }
+    }
+}
+.imagenes-bio{
+    display: flex;
+            flex-direction: column;
+            width: 100%;
+            object-fit: cover;
+            div{
+                img{
+                    margin-left: .625rem;
+                }
+            }
+}
+
+.videogal{
+.videoarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;}
+}
+fieldset{
+    legend{
+    font-weight: bolder;
+    font-size: 1.875rem;
+    }
+    span{
+    font-size: 1.875rem;
+    }
+}
+.discos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.875rem;
+    width: 40%;
+}
+
+@media screen and (max-width:683px){
+    main{
+        .foto-banda{
+            background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 12.5rem;
+        div{
+            h1{
+                font-size: 3.75rem;
+                margin-bottom: 3.125rem;
+                }
+            }
+        }
+    }
+    .imagenes-bio{
+        display: flex;
+                flex-direction: column;
+                width: 100%;
+                object-fit: cover;
+                div{
+                    img{
+                        margin-left: .625rem;
+                    }
+                }
+    }
+    }
+    .videogal{
+    .videoarea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .625rem;}
+    }
+    fieldset{
+        legend{
+        font-weight: bolder;
+        font-size: 1.875rem;
+        }
+        span{
+        font-size: 1.875rem;
+        }
+    }
+
+
+
+
+@media screen and (max-width:425px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav{
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        ul{
+            li{
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+        
+
+main{
+    .foto-banda{
+        background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 3.75rem;
+    div{
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 3.125rem;
+        }
+    }
+    }
+    h2{
+    font-size: 1.875rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    }
+}
+.section-bio{
+    .biografia{
+        font-size: .875rem;
+    }
+}
+.imagenes-bio{
+    display: flex;
+            flex-direction: column;
+            width: 100%;
+            object-fit: cover;
+            div{
+                img{
+                    margin-left: .625rem;
+                }
+            }
+}
+}
+
+
+
+@media screen and (max-width:375px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav{
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        ul{
+            li{
+                a{
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+        
+
+main{
+    .foto-banda{
+        background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 2.5rem;
+    div{
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 3.125rem;
+        }
+    }
+    }
+    h2{
+    font-size: 1.875rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    }
+}
+.section-bio{
+    .biografia{
+        font-size: .875rem;
+    }
+}
+.imagenes-bio{
+    display: flex;
+            flex-direction: column;
+            width: 100%;
+            object-fit: cover;
+            div{
+                img{
+                    margin-left: .625rem;
+                }
+            }
+}
+}
+
+
+@media screen and (max-width:320px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav{
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        ul{
+            li{
+                a{
+                    font-size: .875rem;
+                }
+            }
+        }
+    }
+        
+
+main{
+    .foto-banda{
+        background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 1.25rem;
+    div{
+        h1{
+            font-size: 1.875rem;
+            margin-bottom: 3.125rem;
+        }
+    }
+    }
+    h2{
+    font-size: 1.875rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.928);
+    background-color: rgb(231, 11, 11);
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    }
+}
+.section-bio{
+    .biografia{
+        font-size: .875rem;
+    }
+}
+.imagenes-bio{
+    display: flex;
+            flex-direction: column;
+            width: 100%;
+            object-fit: cover;
+            div{
+                img{
+                    margin-left: .625rem;
+                }
+            }
+}
+}
+
+.cards-container{
+    width: 100%;
+    align-items: center;
+    .card{
+        border: .4375rem solid black;
+        align-items: center;
+        img{
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+            width: 12.5rem;
+            h3{
+                font-size: .875rem;
+            }
+            
+            }
+        }
+        .integrantes{
+            font-size: .875rem;
+        }
+    }
+    
+    
+    .foto-disco{
+            div{
+                h4{
+                    font-size: .9375rem;
+                    margin-bottom: .3125rem;
+                    font-weight: bold;
+                
+                }
+                
+                .button{
+                    font-size: .9375rem;
+                    font-weight: bold;
+                }
+                
+            }
+        
+    }
+    fieldset{
+        legend{
+        font-weight: bolder;
+        font-size: smaller;
+        }
+        span{
+        font-size: .875rem;
+        }
+        input{
+            margin-bottom: 1.25rem;
+            border-style: solid;
+            &:focus{
+                background-color: rgb(216, 211, 213);
+            }
+        }
+        textarea{
+            width: 31.25rem;
+            height: 12.5rem;
+        }
+        .button{
+            font-size: .9375rem;
+            font-weight: bold;
+        }
+    }
+
+
+
+
+

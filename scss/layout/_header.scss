@@ -1,0 +1,32 @@
+body{ 
+    background-color: $color-background;
+    header{
+        @include flex(row, space-between, center);
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.imagen-logo{
+    max-width: 3rem;
+    border-radius: 50%;
+    }
+
+.navbar{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+        li{
+            a{
+                text-decoration: none;
+    color: rgba(255, 255, 255, 0.928);
+    font-size: 1.125rem;
+    font-family: 'Caladea', serif;
+    margin-right: 1.25rem;
+    gap: .625rem;
+            }
+        }
+    }
+}

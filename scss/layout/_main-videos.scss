@@ -1,0 +1,33 @@
+
+.videogal{
+    h5{
+font-family: $fuente-texto;
+font-size: 1.875rem;
+font-weight: bolder;
+color: rgb(226, 43, 55);
+text-align: center;
+margin-bottom: .625rem;
+    }
+    .videoarea{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: .625rem;
+    div{
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }    
+}
+div{
+.carousel-item{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin-left: .9375rem;
+    margin-right: 1.25rem;
+    }
+}
+}

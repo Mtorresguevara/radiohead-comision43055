@@ -1,0 +1,19 @@
+footer{
+    @include flex(row, space-between, center);
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: $fuente-texto;
+    margin-top: 1.25rem;
+    div{
+        .copyright{
+            font-family: $fuente-texto;
+            font-size: small;
+        }
+        .redes{
+            margin-right: .625rem;
+            gap: .9375rem;
+            justify-content: center;
+        }
+    }
+}

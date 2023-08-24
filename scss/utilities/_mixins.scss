@@ -1,0 +1,15 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@mixin grid ($col, $row, $area, $justify, $gap){
+    display: grid;
+    grid-template-columns:$col ;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+    justify-content: $justify ;
+    gap:$gap ;
+}
