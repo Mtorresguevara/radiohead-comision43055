@@ -1,7 +1,7 @@
 footer{
     @include flex(row, space-between, center);
     width: 100%;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white;
     font-family: $fuente-texto;
     margin-top: 1.25rem;

@@ -15,23 +15,12 @@ body {
     align-content: center;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #000000;
     position: sticky;
     top: 0; }
   body .imagen-logo {
     max-width: 3rem;
     border-radius: 50%; }
-  body .navbar {
-    display: flex;
-    list-style: none;
-    cursor: pointer; }
-    body .navbar li a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.928);
-      font-size: 1.125rem;
-      font-family: 'Caladea', serif;
-      margin-right: 1.25rem;
-      gap: .625rem; }
 
 .foto-banda {
   background-image: url(../asset/img/Copia-de-radiohead-band.jpeg);
@@ -174,6 +163,14 @@ h2 {
   object-fit: contain;
   margin-left: .9375rem;
   margin-right: 1.25rem; }
+
+.videogal div a {
+  font-family: "Caladea", serif;
+  font-size: 1.875rem;
+  font-weight: bolder;
+  color: #e22b37;
+  text-align: center;
+  margin-bottom: .625rem; }
 
 form {
   padding: 3.125rem 3.4375rem;
